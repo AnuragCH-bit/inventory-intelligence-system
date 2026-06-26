@@ -1,0 +1,161 @@
+sku_id,part_name,category,unit_cost,reorder_point,safety_stock,current_stock,criticality
+BRG-0001,Bearing Part 1,Bearing,1903.97,448,64,206,Low
+BRG-0002,Bearing Part 2,Bearing,3004.41,221,124,558,Low
+BRG-0003,Bearing Part 3,Bearing,3025.52,251,180,761,High
+BRG-0004,Bearing Part 4,Bearing,3623.89,393,179,291,Low
+BRG-0005,Bearing Part 5,Bearing,3106.53,413,71,352,Medium
+BRG-0006,Bearing Part 6,Bearing,1491.58,158,64,289,High
+BRG-0007,Bearing Part 7,Bearing,3111.01,463,104,343,Medium
+BRG-0008,Bearing Part 8,Bearing,279.93,406,184,120,Medium
+BRG-0009,Bearing Part 9,Bearing,115.66,188,109,113,Low
+BRG-0010,Bearing Part 10,Bearing,1557.84,152,179,439,Medium
+BRG-0011,Bearing Part 11,Bearing,3432.15,363,84,305,Medium
+BRG-0012,Bearing Part 12,Bearing,952.07,487,51,489,Medium
+BRG-0013,Bearing Part 13,Bearing,2860.12,290,195,829,Medium
+BRG-0014,Bearing Part 14,Bearing,2005.99,369,144,915,Medium
+BRG-0015,Bearing Part 15,Bearing,2873.7,351,89,824,Medium
+BRG-0016,Bearing Part 16,Bearing,1393.18,152,73,316,Medium
+BRG-0017,Bearing Part 17,Bearing,2736.35,140,64,912,High
+BRG-0018,Bearing Part 18,Bearing,4935.09,443,178,747,High
+BRG-0019,Bearing Part 19,Bearing,4086.53,180,185,774,Low
+BRG-0020,Bearing Part 20,Bearing,3049.5,330,90,127,Low
+SEA-0001,Seal Part 1,Seal,3135.33,132,97,602,Medium
+SEA-0002,Seal Part 2,Seal,1659.66,198,153,825,Low
+SEA-0003,Seal Part 3,Seal,2387.46,200,180,868,Low
+SEA-0004,Seal Part 4,Seal,1218.13,497,152,894,Medium
+SEA-0005,Seal Part 5,Seal,2166.33,141,173,560,Medium
+SEA-0006,Seal Part 6,Seal,4484.03,340,101,195,Medium
+SEA-0007,Seal Part 7,Seal,739.69,330,192,270,Medium
+SEA-0008,Seal Part 8,Seal,4717.13,426,135,895,Low
+SEA-0009,Seal Part 9,Seal,4050.2,233,77,127,Medium
+SEA-0010,Seal Part 10,Seal,2111.72,430,177,605,High
+SEA-0011,Seal Part 11,Seal,1813.67,289,178,476,Medium
+SEA-0012,Seal Part 12,Seal,52.58,332,52,458,High
+SEA-0013,Seal Part 13,Seal,2693.74,417,100,333,Medium
+SEA-0014,Seal Part 14,Seal,4717.4,473,145,571,Low
+SEA-0015,Seal Part 15,Seal,1849.97,151,61,609,Medium
+SEA-0016,Seal Part 16,Seal,3575.74,200,162,180,Medium
+SEA-0017,Seal Part 17,Seal,4884.24,319,103,954,Medium
+SEA-0018,Seal Part 18,Seal,4545.92,225,179,152,Medium
+SEA-0019,Seal Part 19,Seal,4928.97,346,117,538,Low
+SEA-0020,Seal Part 20,Seal,1226.31,354,87,379,Medium
+FIL-0001,Filter Part 1,Filter,4917.94,494,193,708,High
+FIL-0002,Filter Part 2,Filter,2565.58,448,52,759,Medium
+FIL-0003,Filter Part 3,Filter,1140.19,445,196,247,Medium
+FIL-0004,Filter Part 4,Filter,913.11,227,88,437,Low
+FIL-0005,Filter Part 5,Filter,3394.67,250,91,710,Medium
+FIL-0006,Filter Part 6,Filter,916.03,211,109,980,Medium
+FIL-0007,Filter Part 7,Filter,510.86,239,86,259,Medium
+FIL-0008,Filter Part 8,Filter,1728.2,198,196,915,Low
+FIL-0009,Filter Part 9,Filter,4288.81,153,169,772,Medium
+FIL-0010,Filter Part 10,Filter,466.49,203,133,353,High
+FIL-0011,Filter Part 11,Filter,552.28,198,142,995,Medium
+FIL-0012,Filter Part 12,Filter,2453.79,262,117,900,Medium
+FIL-0013,Filter Part 13,Filter,935.17,483,185,234,Low
+FIL-0014,Filter Part 14,Filter,1574.9,275,164,569,Medium
+FIL-0015,Filter Part 15,Filter,1257.75,137,158,662,Low
+FIL-0016,Filter Part 16,Filter,3174.14,325,70,897,Medium
+FIL-0017,Filter Part 17,Filter,3361.17,416,97,758,Medium
+FIL-0018,Filter Part 18,Filter,3854.34,116,95,472,Low
+FIL-0019,Filter Part 19,Filter,3751.21,136,73,448,Medium
+FIL-0020,Filter Part 20,Filter,4834.94,198,165,290,Medium
+ELE-0001,Electrical Part 1,Electrical,995.01,260,116,227,Medium
+ELE-0002,Electrical Part 2,Electrical,2003.72,153,107,422,Medium
+ELE-0003,Electrical Part 3,Electrical,531.02,387,135,762,High
+ELE-0004,Electrical Part 4,Electrical,2615.73,485,66,203,Medium
+ELE-0005,Electrical Part 5,Electrical,3527.3,275,88,576,Medium
+ELE-0006,Electrical Part 6,Electrical,2127.92,405,62,927,Medium
+ELE-0007,Electrical Part 7,Electrical,2532.51,272,69,420,High
+ELE-0008,Electrical Part 8,Electrical,2014.08,241,164,570,High
+ELE-0009,Electrical Part 9,Electrical,2915.38,387,135,150,Medium
+ELE-0010,Electrical Part 10,Electrical,2736.09,224,199,413,Low
+ELE-0011,Electrical Part 11,Electrical,1288.74,269,119,882,Medium
+ELE-0012,Electrical Part 12,Electrical,678.95,363,102,671,Medium
+ELE-0013,Electrical Part 13,Electrical,3133.31,295,55,976,High
+ELE-0014,Electrical Part 14,Electrical,2086.2,454,104,919,High
+ELE-0015,Electrical Part 15,Electrical,4849.21,205,196,756,Medium
+ELE-0016,Electrical Part 16,Electrical,2195.93,157,139,840,High
+ELE-0017,Electrical Part 17,Electrical,450.32,226,186,740,High
+ELE-0018,Electrical Part 18,Electrical,824.36,389,145,737,High
+ELE-0019,Electrical Part 19,Electrical,955.19,336,166,996,Low
+ELE-0020,Electrical Part 20,Electrical,3702.59,168,71,960,Medium
+FAS-0001,Fastener Part 1,Fastener,1276.27,243,135,796,Medium
+FAS-0002,Fastener Part 2,Fastener,504.41,146,143,849,Low
+FAS-0003,Fastener Part 3,Fastener,917.88,499,134,650,Medium
+FAS-0004,Fastener Part 4,Fastener,2350.14,456,72,861,Medium
+FAS-0005,Fastener Part 5,Fastener,3193.71,389,187,861,Low
+FAS-0006,Fastener Part 6,Fastener,2530.15,424,53,115,High
+FAS-0007,Fastener Part 7,Fastener,3229.98,483,133,763,Medium
+FAS-0008,Fastener Part 8,Fastener,2888.17,132,150,367,Medium
+FAS-0009,Fastener Part 9,Fastener,4807.89,429,92,655,Medium
+FAS-0010,Fastener Part 10,Fastener,1112.22,401,179,352,High
+FAS-0011,Fastener Part 11,Fastener,3430.88,436,139,875,Medium
+FAS-0012,Fastener Part 12,Fastener,3423.99,214,154,295,Medium
+FAS-0013,Fastener Part 13,Fastener,1774.27,174,169,519,Medium
+FAS-0014,Fastener Part 14,Fastener,4839.52,263,187,968,Low
+FAS-0015,Fastener Part 15,Fastener,4043.83,276,148,647,Medium
+FAS-0016,Fastener Part 16,Fastener,3893.24,251,86,879,Medium
+FAS-0017,Fastener Part 17,Fastener,3766.81,316,148,972,Medium
+FAS-0018,Fastener Part 18,Fastener,2694.92,183,161,828,Medium
+FAS-0019,Fastener Part 19,Fastener,4482.84,276,149,495,Low
+FAS-0020,Fastener Part 20,Fastener,4243.36,364,77,817,Medium
+CHE-0001,Chemical Part 1,Chemical,2438.48,466,193,984,High
+CHE-0002,Chemical Part 2,Chemical,3032.08,478,102,250,Low
+CHE-0003,Chemical Part 3,Chemical,611.65,280,91,285,High
+CHE-0004,Chemical Part 4,Chemical,2770.17,232,124,757,Low
+CHE-0005,Chemical Part 5,Chemical,3455.75,352,56,273,Low
+CHE-0006,Chemical Part 6,Chemical,410.18,382,171,293,High
+CHE-0007,Chemical Part 7,Chemical,469.95,438,185,595,Low
+CHE-0008,Chemical Part 8,Chemical,4407.78,244,120,316,Medium
+CHE-0009,Chemical Part 9,Chemical,1783.58,351,68,544,Medium
+CHE-0010,Chemical Part 10,Chemical,3540.17,301,139,630,High
+CHE-0011,Chemical Part 11,Chemical,2488.49,240,175,157,Low
+CHE-0012,Chemical Part 12,Chemical,3847.61,482,154,100,Medium
+CHE-0013,Chemical Part 13,Chemical,1225.66,290,162,508,Low
+CHE-0014,Chemical Part 14,Chemical,1156.8,233,107,655,Low
+CHE-0015,Chemical Part 15,Chemical,2802.22,402,198,179,Medium
+CHE-0016,Chemical Part 16,Chemical,4965.18,328,196,631,High
+CHE-0017,Chemical Part 17,Chemical,872.77,404,63,242,Medium
+CHE-0018,Chemical Part 18,Chemical,3156.41,473,52,755,Low
+CHE-0019,Chemical Part 19,Chemical,4580.51,429,65,457,Medium
+CHE-0020,Chemical Part 20,Chemical,3119.66,107,171,447,Medium
+RAW-0001,Raw Metal Part 1,Raw Metal,1971.93,415,77,831,Medium
+RAW-0002,Raw Metal Part 2,Raw Metal,1336.75,244,190,657,High
+RAW-0003,Raw Metal Part 3,Raw Metal,4705.63,470,96,549,High
+RAW-0004,Raw Metal Part 4,Raw Metal,4389.47,350,158,104,High
+RAW-0005,Raw Metal Part 5,Raw Metal,1913.49,164,195,323,Low
+RAW-0006,Raw Metal Part 6,Raw Metal,1914.86,381,112,316,Low
+RAW-0007,Raw Metal Part 7,Raw Metal,4218.49,197,154,198,High
+RAW-0008,Raw Metal Part 8,Raw Metal,117.68,410,55,575,Low
+RAW-0009,Raw Metal Part 9,Raw Metal,4998.6,457,52,536,Medium
+RAW-0010,Raw Metal Part 10,Raw Metal,3644.3,301,132,244,Medium
+RAW-0011,Raw Metal Part 11,Raw Metal,1064.97,100,100,784,Medium
+RAW-0012,Raw Metal Part 12,Raw Metal,1181.78,468,81,133,Medium
+RAW-0013,Raw Metal Part 13,Raw Metal,612.11,253,167,870,Medium
+RAW-0014,Raw Metal Part 14,Raw Metal,4268.3,153,182,833,Low
+RAW-0015,Raw Metal Part 15,Raw Metal,2970.28,354,96,306,Low
+RAW-0016,Raw Metal Part 16,Raw Metal,3214.84,174,152,521,Medium
+RAW-0017,Raw Metal Part 17,Raw Metal,4903.29,405,147,949,Medium
+RAW-0018,Raw Metal Part 18,Raw Metal,2215.5,407,128,641,Medium
+RAW-0019,Raw Metal Part 19,Raw Metal,4318.7,232,78,999,Medium
+RAW-0020,Raw Metal Part 20,Raw Metal,4218.35,372,133,168,Low
+CON-0001,Consumable Part 1,Consumable,2488.46,304,175,846,Medium
+CON-0002,Consumable Part 2,Consumable,1740.74,210,129,194,Medium
+CON-0003,Consumable Part 3,Consumable,3503.45,487,153,999,Medium
+CON-0004,Consumable Part 4,Consumable,4489.1,294,142,771,High
+CON-0005,Consumable Part 5,Consumable,1001.83,376,54,565,Medium
+CON-0006,Consumable Part 6,Consumable,926.2,425,50,744,Medium
+CON-0007,Consumable Part 7,Consumable,1071.35,133,127,829,Medium
+CON-0008,Consumable Part 8,Consumable,244.6,348,96,220,Medium
+CON-0009,Consumable Part 9,Consumable,2582.7,206,112,147,High
+CON-0010,Consumable Part 10,Consumable,1420.54,356,57,724,Medium
+CON-0011,Consumable Part 11,Consumable,4931.97,402,176,155,Medium
+CON-0012,Consumable Part 12,Consumable,3110.36,177,179,464,High
+CON-0013,Consumable Part 13,Consumable,781.31,470,56,102,Low
+CON-0014,Consumable Part 14,Consumable,2582.8,338,67,605,Medium
+CON-0015,Consumable Part 15,Consumable,2015.96,291,168,584,High
+CON-0016,Consumable Part 16,Consumable,2841.63,372,135,573,Medium
+CON-0017,Consumable Part 17,Consumable,1204.42,112,74,679,Medium
+CON-0018,Consumable Part 18,Consumable,3261.67,245,160,327,Medium
+CON-0019,Consumable Part 19,Consumable,2954.86,363,162,847,High
+CON-0020,Consumable Part 20,Consumable,1454.69,105,75,419,Medium

@@ -1,0 +1,16 @@
+supplier_id,supplier_name,country,lead_time_days,reliability_score
+SUP-001,SKF Industries,India,8,96
+SUP-002,Timken Global,USA,10,94
+SUP-003,NSK Components,Japan,12,95
+SUP-004,Precision Seals Ltd,Germany,14,92
+SUP-005,FilterTech,India,9,93
+SUP-006,Electra Systems,China,11,90
+SUP-007,FastenPro,India,7,97
+SUP-008,ChemSource,Singapore,13,91
+SUP-009,MetalWorks,India,8,95
+SUP-010,Industrial Consumables,India,6,96
+SUP-011,Prime Bearings,Germany,15,89
+SUP-012,Advanced Materials,Japan,10,94
+SUP-013,Global Parts Ltd,China,28,62
+SUP-014,SupplyChain Corp,USA,12,88
+SUP-015,Universal Components,India,9,93

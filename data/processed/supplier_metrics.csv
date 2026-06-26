@@ -1,0 +1,16 @@
+supplier_id,avg_lead_time,total_orders,supplier_name,reliability_score
+SUP-004,14.0,999,Precision Seals Ltd,92
+SUP-007,7.0,974,FastenPro,97
+SUP-013,40.0,973,Global Parts Ltd,62
+SUP-012,10.0,998,Advanced Materials,94
+SUP-006,11.0,1058,Electra Systems,90
+SUP-009,8.0,1002,MetalWorks,95
+SUP-011,15.0,1021,Prime Bearings,89
+SUP-008,13.0,1026,ChemSource,91
+SUP-014,12.0,1003,SupplyChain Corp,88
+SUP-002,10.0,1016,Timken Global,94
+SUP-003,12.0,959,NSK Components,95
+SUP-010,6.0,992,Industrial Consumables,96
+SUP-015,9.0,1025,Universal Components,93
+SUP-001,8.0,967,SKF Industries,96
+SUP-005,9.0,987,FilterTech,93
