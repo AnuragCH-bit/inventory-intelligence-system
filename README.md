@@ -62,33 +62,128 @@ Enterprise AI Procurement Copilot is an end-to-end intelligent procurement syste
 
 ---
 
-# 🏗️ Architecture
+# 🏗 Complete System Architecture
 
 ```text
-                        User
-                          │
-                          ▼
-                  Streamlit Dashboard
-                          │
-                          ▼
-                     FastAPI API
-                          │
-                          ▼
-               AI Procurement Agent
-      ┌──────────────┬───────────────┬──────────────┐
-      ▼              ▼               ▼
- Inventory Tool   ML Prediction     RAG Search
-      │              │               │
-      ▼              ▼               ▼
- Business Rules  Logistic Regression ChromaDB
-                     │               │
-                     └──────┬────────┘
-                            ▼
-                     Ollama (Llama 3.2)
-                            │
-                            ▼
-                AI Procurement Recommendation
+                              Enterprise AI Procurement Copilot
+
+                                  
+                            Synthetic Inventory Data Generation
+                                         │
+                                         ▼
+                             Inventory Datasets (CSV Files)
+                                         │
+                                         ▼
+
+                            PySpark ETL & Data Processing
+                                         │
+                                         ▼
+                              Data Cleaning & Transformation
+                                         │
+                                         ▼
+                              Feature Engineering Pipeline
+                                         │
+               ┌─────────────────────────┼─────────────────────────┐
+               ▼                         ▼                         ▼
+   Weekly Consumption          Days of Supply          Annual Consumption
+        Velocity                                           Value
+               │                         │                         │
+               └─────────────────────────┼─────────────────────────┘
+                                         ▼
+
+                              Machine Learning Pipeline
+                                         │
+                                         ▼
+                          Logistic Regression Training Model
+                                         │
+                                         ▼
+                              stockout_model.pkl Generated
+                                         │
+                                         ▼
+                                 FastAPI REST Backend
+                                         │
+               ┌─────────────────────────┼─────────────────────────┐
+               ▼                         ▼                         ▼
+           /predict                  /health                  /agent
+                                         │
+                                         ▼
+
+                                        Day 6
+                           Enterprise AI Procurement Agent
+                                         │
+        ┌────────────────────────────────┼────────────────────────────────┐
+        ▼                                ▼                                ▼
+ Inventory Tool                  ML Prediction Tool               Business Rules
+        │                                │                                │
+        ▼                                ▼                                ▼
+Inventory Snapshot.csv      Logistic Regression             Procurement Logic
+        │                                │                                │
+        └────────────────────────────────┼────────────────────────────────┘
+                                         ▼
+
+                                      
+                    Retrieval-Augmented Generation (LangChain)
+                                         │
+                                         ▼
+                             Procurement Policy PDF
+                                         │
+                                         ▼
+                           Recursive Text Chunking
+                                         │
+                                         ▼
+                           HuggingFace Embeddings
+                                         │
+                                         ▼
+                                 Chroma Vector DB
+                                         │
+                                         ▼
+                                   Semantic Search
+                                         │
+                                         ▼
+
+                                    
+                            Prompt Engineering + LLM
+                                         │
+                                         ▼
+                           LangChain Prompt Template
+                                         │
+                                         ▼
+                             Ollama (Llama 3.2 : 3B)
+                                         │
+                                         ▼
+                      Structured AI Procurement Recommendation
+                                         │
+                                         ▼
+
+                                       
+                          Streamlit Dashboard + FastAPI
+                                         │
+                                         ▼
+                               Business User Interface
+                                         │
+                                         ▼
+
+                             Docker Containerization
+                                         │
+                                         ▼
+      ┌────────────────────────────────────────────────────────────────────┐
+      │                         Docker Container                           │
+      │                                                                    │
+      │  ✓ FastAPI                                                         │
+      │  ✓ Streamlit                                                       │
+      │  ✓ LangChain                                                       │
+      │  ✓ ChromaDB                                                        │
+      │  ✓ Scikit-Learn                                                    │
+      │  ✓ Pandas                                                          │
+      │  ✓ PySpark                                                         │
+      │  ✓ Project Source Code                                             │
+      │                                                                    │
+      └────────────────────────────────────────────────────────────────────┘
+                                         │
+                                         ▼
+                               Enterprise Deployment
 ```
+
 
 ---
 
@@ -223,16 +318,6 @@ Structured Procurement Recommendation
 
 ---
 
-# 📸 Screenshots
-
-Add screenshots for:
-
-* Streamlit Dashboard
-* Swagger API
-* AI Recommendation
-* System Architecture
-
----
 
 # 🚀 Future Enhancements
 
