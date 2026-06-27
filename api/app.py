@@ -1,10 +1,13 @@
 from fastapi import FastAPI, HTTPException
 from api.schemas import (
     StockPredictionRequest,
-    StockPredictionResponse
+    StockPredictionResponse,
+    ProcurementRequest,
+    ProcurementResponse
 )
 import pandas as pd
 import joblib
+from agent.procurement_agent import procurement_agent
 
 app = FastAPI(
 
@@ -142,6 +145,7 @@ def predict(data: StockPredictionRequest):
             status_code=500,
             detail=f"Prediction failed: {str(e)}"
         )
+
     
 
 @app.get(
@@ -169,3 +173,19 @@ def health():
         "version": "1.0.0"
 
     }
+
+
+@app.post(
+    "/agent",
+    response_model=ProcurementResponse
+)
+def ai_procurement_agent(
+    data: ProcurementRequest
+):
+
+    result = procurement_agent(
+        sku=data.sku,
+        question=data.question
+    )
+
+    return result
