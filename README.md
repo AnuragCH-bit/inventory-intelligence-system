@@ -1,360 +1,255 @@
-# 📦 Inventory Intelligence System
+# 📦 Enterprise AI Procurement Copilot
 
-### AI-Powered Inventory Analytics, Stockout Prediction & Demand Forecasting Platform
+An AI-powered Procurement Decision Support System that combines **Machine Learning**, **Business Rules**, **Retrieval-Augmented Generation (RAG)**, and **Large Language Models (LLMs)** to help procurement teams make intelligent inventory replenishment decisions.
 
-An end-to-end Inventory Intelligence System built using **PySpark, Machine Learning, FastAPI, and Power BI** to analyze inventory data, predict stockout risks, forecast future demand, and generate procurement recommendations. The project demonstrates a complete data engineering and machine learning pipeline with an interactive dashboard and production-ready REST API.
+---
 
+## 🚀 Overview
 
-# 🚀 Project Overview
+Enterprise AI Procurement Copilot is an end-to-end intelligent procurement system that analyzes inventory, predicts stockout risk, retrieves procurement policies, and generates AI-powered recommendations through a REST API and an interactive dashboard.
 
-Managing inventory efficiently is one of the biggest challenges in supply chain management. Overstocking increases storage costs, while stockouts lead to production delays and lost sales.
+---
 
-This project solves these challenges by combining data engineering, machine learning, business intelligence, and API development into a single platform.
+## ✨ Features
 
-The system performs the following tasks:
+### 🤖 AI Procurement Assistant
 
-* Analyze inventory consumption using PySpark.
-* Identify high-risk inventory items.
-* Predict stockout risk using Logistic Regression.
-* Forecast future demand for each SKU.
-* Generate procurement recommendations.
-* Visualize business KPIs using Power BI.
-* Expose machine learning predictions through a FastAPI REST API with interactive Swagger documentation.
+* AI-powered procurement recommendations
+* Natural language question answering
+* Context-aware responses using RAG
+* Structured JSON output
 
+### 📦 Inventory Intelligence
 
-# ✨ Key Features
+* Inventory snapshot analysis
+* Reorder point evaluation
+* Safety stock validation
+* Procurement recommendations
 
-* 📊 Inventory Analytics using PySpark
-* 📦 ABC Inventory Analysis
-* ⚠️ Stockout Risk Prediction using Machine Learning
-* 📈 Demand Forecasting
-* 🛒 Procurement Recommendation Engine
-* 📉 Power BI Executive Dashboard
-* 🚀 FastAPI REST API
-* 📖 Interactive Swagger Documentation
-* ✅ Request & Response Validation using Pydantic
-* ❤️ Health Check Endpoint
-* 🎯 Business Recommendations based on ML Predictions
+### 📈 Machine Learning
 
+* Logistic Regression stockout prediction
+* Risk classification
+* Confidence estimation
+* Feature engineering pipeline
 
-# 🛠 Technology Stack
+### 📚 Retrieval-Augmented Generation (RAG)
 
- Category             |      Technology          
- -------------------    ------------------- 
- Programming Language    Python              
- Data Processing         PySpark, Pandas     
- Machine Learning        Scikit-learn        
- ML Algorithm            Logistic Regression 
- API Framework           FastAPI             
- Validation              Pydantic            
- API Server              Uvicorn             
- Dashboard               Power BI            
- Version Control         Git & GitHub        
- Model Serialization     Joblib              
+* PDF document ingestion
+* Chroma Vector Database
+* Semantic search
+* HuggingFace Embeddings
+* LangChain Retriever
 
+### 📋 Business Rule Engine
 
-# 🏗 System Architecture
+* Procurement policy validation
+* Inventory evaluation
+* Decision support logic
 
+### 🌐 REST API
 
-                        Inventory Intelligence System
+* FastAPI
+* Swagger Documentation
+* Pydantic Validation
+* JSON APIs
 
-                           Synthetic Data Generation
-                                      │
-                                      ▼
-                            Inventory Datasets (CSV)
-                                      │
-                                      ▼
-                           PySpark Data Processing
-                                      │
-                                      ▼
-                       Feature Engineering & Analytics
-                                      │
-        ┌─────────────────────────────┼─────────────────────────────┐
-        ▼                             ▼                             ▼
- Stockout Prediction          Demand Forecasting      Procurement Recommendation
-(Logistic Regression)         (30-Day Forecast)        (Reorder Quantity)
-        │                             │                             │
-        └─────────────────────────────┼─────────────────────────────┘
-                                      ▼
-                             Power BI Dashboard
-                                      │
-                                      ▼
-                             FastAPI REST API
-                                      │
-                                      ▼
-                         Business Users / Managers
+### 💻 User Interface
 
+* Streamlit Dashboard
+* AI Recommendation Panel
+* Interactive Procurement Queries
 
+---
 
-# 🔄 Project Workflow
+# 🏗️ Architecture
 
-1. Generate synthetic inventory datasets.
-2. Perform large-scale analytics using PySpark.
-3. Engineer features for machine learning.
-4. Train a Logistic Regression model to predict stockout risk.
-5. Forecast future demand for each SKU.
-6. Generate procurement recommendations.
-7. Visualize KPIs using Power BI.
-8. Deploy the trained ML model using FastAPI.
-9. Serve real-time predictions through REST APIs.
+```text
+                        User
+                          │
+                          ▼
+                  Streamlit Dashboard
+                          │
+                          ▼
+                     FastAPI API
+                          │
+                          ▼
+               AI Procurement Agent
+      ┌──────────────┬───────────────┬──────────────┐
+      ▼              ▼               ▼
+ Inventory Tool   ML Prediction     RAG Search
+      │              │               │
+      ▼              ▼               ▼
+ Business Rules  Logistic Regression ChromaDB
+                     │               │
+                     └──────┬────────┘
+                            ▼
+                     Ollama (Llama 3.2)
+                            │
+                            ▼
+                AI Procurement Recommendation
+```
 
+---
 
+# 🛠️ Technology Stack
 
+| Category             | Technology         |
+| -------------------- | ------------------ |
+| Programming Language | Python 3.12        |
+| Backend              | FastAPI            |
+| Frontend             | Streamlit          |
+| Machine Learning     | Scikit-Learn       |
+| Data Processing      | Pandas, PySpark    |
+| AI Framework         | LangChain          |
+| LLM                  | Ollama (Llama 3.2) |
+| Embeddings           | HuggingFace MiniLM |
+| Vector Database      | ChromaDB           |
+| API Validation       | Pydantic           |
+| Version Control      | Git & GitHub       |
 
-# 📁 Project Structure
-inventory-intelligence-system/
-│
-├── api/
-│   ├── app.py
-│   └── schemas.py
-│
-├── data/
-│   ├── raw/
-│   └── processed/
-│
-├── dashboard/
-│   └── Inventory_Intelligence.pbix
-│
-├── ml/
-│   ├── stockout_model.py
-│   ├── demand_forecasting.py
-│   ├── feature_engineering.py
-│   └── stockout_model.pkl
-│
-├── requirements.txt
-├── README.md
-└── .gitignore
+---
 
 
 
 
-# ⚙️ Installation Guide
-
-## 1. Clone the Repository
-
-bash
-git clone https://github.com/AnuragCH-bit/inventory-intelligence-system.git
 
 
-## 2. Navigate to the Project
+# ⚙️ Installation
 
-bash
+## Clone Repository
+
+```bash
+git clone https://github.com/<your-username>/inventory-intelligence-system.git
+
 cd inventory-intelligence-system
+```
 
+## Create Virtual Environment
 
-## 3. Create Virtual Environment
-
-### Windows
-
-bash
+```bash
 python -m venv .venv
-Activate Virtual Environment
+```
 
-bash
+Windows
+
+```bash
 .venv\Scripts\activate
+```
 
+## Install Dependencies
 
-### Linux / macOS
-
-bash
-python3 -m venv .venv
-source .venv/bin/activate
-
-
-## 4. Install Dependencies
-
-bash
+```bash
 pip install -r requirements.txt
+```
 
+---
 
-# ▶️ How to Run the Project
+# 🤖 Install Ollama
 
-### Step 1
+Download Ollama:
 
-Run the Machine Learning pipeline.
+https://ollama.com/download
 
-bash
-python ml/feature_engineering.py
+Pull the model:
 
-python ml/stockout_model.py
+```bash
+ollama pull llama3.2:3b
+```
 
-python ml/demand_forecasting.py
+Start Ollama:
 
+```bash
+ollama serve
+```
 
-### Step 2
+---
 
-Start FastAPI Server
+# 📚 Build Vector Database
 
-bash
+```bash
+python rag/ingest.py
+```
+
+---
+
+# 🚀 Run FastAPI
+
+```bash
 uvicorn api.app:app --reload
+```
 
+Swagger UI:
 
-### Step 3
+```
+http://localhost:8000/docs
+```
 
-Open Swagger Documentation
+---
 
-text
-http://127.0.0.1:8000/docs
+# 💻 Run Streamlit
 
+```bash
+streamlit run ui/app.py
+```
 
-### Step 4
-
-Test Prediction API
-
-Use the `/predict` endpoint in Swagger UI and provide the required inventory values to receive:
-
-* Stockout Prediction
-* Confidence Score
-* Business Recommendation
-
-
-
-# 🌐 API Endpoints
-
-| Method | Endpoint   | Description           |
-| ------ | ---------- | --------------------- |
-| GET    | `/`        | Home Endpoint         |
-| GET    | `/health`  | Health Check Endpoint |
-| POST   | `/predict` | Predict Stockout Risk |
+---
 
 
 
-`json
-{
-  "prediction": 0,
-  "risk": "LOW STOCKOUT RISK",
-  "confidence": 97.06,
-  "recommendation": "Inventory level is healthy. Continue regular monitoring."
-}
+# 🧠 AI Workflow
 
+```text
+User Question
+      │
+      ▼
+Inventory Lookup
+      │
+      ▼
+Business Rule Evaluation
+      │
+      ▼
+Machine Learning Prediction
+      │
+      ▼
+Retrieve Procurement Policy
+      │
+      ▼
+Llama 3.2 Analysis
+      │
+      ▼
+Structured Procurement Recommendation
+```
 
+---
 
-# 🤖 Machine Learning Pipeline
+# 📸 Screenshots
 
-The project uses a Logistic Regression model to predict stockout risk.
+Add screenshots for:
 
-### Features Used
+* Streamlit Dashboard
+* Swagger API
+* AI Recommendation
+* System Architecture
 
-* Weekly Consumption Velocity
-* Days of Supply
-* Annual Consumption Value
-* Current Stock
-
-### Target
-
-* Stockout Risk (0 = Low Risk, 1 = High Risk)
-
-### Model Performance
-
-* Algorithm: Logistic Regression
-* Class Balancing: Enabled
-* Model Serialization: Joblib
-* Prediction Confidence: Implemented using `predict_proba()`
-
-
-
-# 📊 Power BI Dashboard
-
-### Dashboard Includes
-
-* Executive KPI Summary
-* Total SKUs
-* High Risk SKUs
-* Critical Procurement Items
-* Supplier Analysis
-* Risk Distribution
-* Top Risk Inventory
-* Procurement Recommendations
-
-
-
-## Live Demo
-
-### API URL
-
-https://inventory-intelligence-system.onrender.com
-
-### Swagger Documentation
-
-https://inventory-intelligence-system.onrender.com/docs
-
-### Health check
-
-https://inventory-intelligence-system.onrender.com/health
-
-
-
-
-# 📈 Project Results
-
-The Inventory Intelligence System successfully demonstrates an end-to-end data engineering and machine learning pipeline for inventory optimization.
-
-### Key Outcomes
-
-This project demonstrates the complete lifecycle of a production-ready inventory analytics solution.
-
-* Generated realistic synthetic inventory datasets.
-* Performed large-scale analytics using PySpark.
-* Built a Logistic Regression model for stockout prediction.
-* Generated demand forecasts and procurement recommendations.
-* Designed an interactive Power BI dashboard for business users.
-* Deployed the trained machine learning model as a REST API using FastAPI.
-* Implemented request validation, response validation, confidence scores, and health monitoring.
-
-
-
+---
 
 # 🚀 Future Enhancements
 
-The following enhancements can be implemented in future versions of the project:
+* Docker Support
+* Conversation Memory
+* Multi-Agent Architecture
+* PostgreSQL Integration
+* AWS Deployment
+* CI/CD Pipeline
+* Monitoring & Logging
 
-* Deploy the API on AWS EC2 or Azure.
-* Containerize the application using Docker.
-* Build CI/CD pipelines using GitHub Actions.
-* Replace batch processing with real-time streaming using Apache Kafka.
-* Integrate with ERP systems such as SAP or Oracle.
-* Add advanced forecasting models such as XGBoost or LSTM.
-* Implement authentication and authorization for API security.
-* Store predictions in PostgreSQL for historical analysis.
-
-
-# 💡 Skills Demonstrated
-
-This project demonstrates practical experience in:
-
-* Python Programming
-* Data Engineering
-* PySpark
-* Feature Engineering
-* Machine Learning
-* Logistic Regression
-* FastAPI Development
-* REST API Design
-* Pydantic Validation
-* Power BI Dashboard Development
-* Git & GitHub
-* Model Deployment
-* Business Analytics
-
-
+---
 
 # 👨‍💻 Author
 
 **Anurag Hiwarkar**
 
-Aspiring Data Engineer | Machine Learning Enthusiast | Python Developer
+AI • Machine Learning • Data Engineering • Generative AI • FastAPI • LangChain • PySpark
 
-### Connect With Me
-
-* GitHub: https://github.com/AnuragCH-bit
-
-
-
-
-# 📄 License
-
-This project is licensed under the MIT License.
-
-You are free to use, modify, and distribute this project for educational and learning purposes.
-
-
+GitHub: https://github.com/AnuragCH-bit
